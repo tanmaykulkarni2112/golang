@@ -21,8 +21,6 @@ func printCommandEvents(analyticsChannel <-chan *slacker.CommandEvent) {
 }
 
 func main() {
-	//os.Setenv("SLACK_BOT_TOKEN", "xoxb-8533643393714-8535578560724-uNZxlJK59SuuvToRPYSdGZmu")
-	//os.Setenv("SLACK_APP_TOKEN", "xapp-1-A08FP6EN9FD-8555378250256-5a8eca92681fe1c60c34e41b4178c907dada8872960c818e2e61f9c7c418027a")
 
 	EnvErr := godotenv.Load()
 	if EnvErr != nil {
